@@ -17,5 +17,7 @@ export class MunicipioListComponent implements OnInit {
             new Municipio(4, "Esmeraldas", "33000", "aaaaa", 200000),
             new Municipio(5, "Ibirité", "34000", "bbbb", 150000),
         );
+
+        console.log(JSON.stringify(this.municipios));
     }
 }

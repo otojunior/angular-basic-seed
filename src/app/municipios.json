@@ -1,0 +1,37 @@
+[
+    {
+        "id": 1,
+        "nome": "Belo Horizonte",
+        "cep": "30000",
+        "descricao": "xxxx",
+        "populacao": 2000000
+    },
+    {
+        "id": 2,
+        "nome": "Contagem",
+        "cep": "31000",
+        "descricao": "yyyy",
+        "populacao": 1000000
+    },
+    {
+        "id": 3,
+        "nome": "Ribeirão das Neves",
+        "cep": "32000",
+        "descricao": "zzzz",
+        "populacao": 450000
+    },
+    {
+        "id": 4,
+        "nome": "Esmeraldas",
+        "cep": "33000",
+        "descricao": "aaaaa",
+        "populacao": 200000
+    },
+    {
+        "id": 5,
+        "nome": "Ibirité",
+        "cep": "34000",
+        "descricao": "bbbb",
+        "populacao": 150000
+    }
+]

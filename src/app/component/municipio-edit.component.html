@@ -1,0 +1,33 @@
+<div class="row">
+    <h1 class="display-4">Editar Municipio</h1>
+</div>
+<div class="row" style="margin-top: 20px">
+    <form>
+        <div class="form-group">
+            <label for="inputId">Id:</label>
+            <input type="number" class="form-control" id="inputId">
+        </div>
+        <div class="form-group">
+            <label for="inputNome">Nome:</label>
+            <input type="text" class="form-control" id="inputNome">
+        </div>
+        <div class="form-group">
+            <label for="inputCep">CEP:</label>
+            <input type="number" class="form-control" id="inputCep">
+        </div>
+        <div class="form-group">
+            <label for="inputDesc">Descrição:</label>
+            <textarea rows="4" cols="50" name="inputDesc" class="form-control"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlInput1">População:</label>
+            <input type="number" class="form-control" id="exampleFormControlInput1">
+        </div>
+    </form>
+</div>
+<div class="row" style="margin-top: 20px">
+    <div class="btn-group" role="group" aria-label="Basic example">
+        <button type="button" class="btn btn-secondary" [routerLink]="['/municipio']">Cancelar</button>
+        <button type="button" class="btn btn-secondary" onClick="window.location.replace('consulta.html')">Salvar</button>
+    </div>
+</div>

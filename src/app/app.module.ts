@@ -7,6 +7,7 @@ import { AppComponent } from "./component/app.component";
 import { routing } from "./app.routing";
 
 import { MunicipioListComponent } from "./component/municipio-list.component"
+import { MunicipioEditComponent } from "./component/municipio-edit.component"
 
 @NgModule({
     imports: [
@@ -17,7 +18,8 @@ import { MunicipioListComponent } from "./component/municipio-list.component"
     ],
     declarations: [
         AppComponent,
-        MunicipioListComponent
+        MunicipioListComponent,
+        MunicipioEditComponent
     ],
     providers: [
     ],
