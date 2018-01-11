@@ -10,6 +10,7 @@ export class MunicipioEditResolver implements Resolve<Municipio> {
     }
 
     resolve(route: ActivatedRouteSnapshot) {
+        console.log("===>>> MunicipioEditResolver")
         let id = parseInt(route.paramMap.get('id'));
         return this.service.getMunicipio(id);
     }

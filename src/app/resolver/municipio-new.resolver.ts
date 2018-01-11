@@ -10,6 +10,7 @@ export class MunicipioNewResolver implements Resolve<Municipio> {
     }
 
     resolve(route: ActivatedRouteSnapshot) {
+        console.log("===>>> MunicipioNewResolver")
         return this.service.newMunicipio();
     }
 }

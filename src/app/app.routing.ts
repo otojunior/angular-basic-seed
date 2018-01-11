@@ -19,13 +19,6 @@ const appRoutes: Routes = [
         component: MunicipioListComponent
     },
     {
-        path: 'municipio/:id',
-        component: MunicipioEditComponent,
-        resolve: {
-            municipioResolver: MunicipioEditResolver
-        }
-    },
-    {
         path: 'municipio/novo',
         component: MunicipioEditComponent,
         resolve: {
@@ -37,6 +30,13 @@ const appRoutes: Routes = [
         component: MunicipioEditComponent,
         resolve: {
             municipioResolver: MunicipioCloneResolver
+        }
+    },
+    {
+        path: 'municipio/:id',
+        component: MunicipioEditComponent,
+        resolve: {
+            municipioResolver: MunicipioEditResolver
         }
     }
 ];
