@@ -5,23 +5,23 @@
     <form>
         <div class="form-group">
             <label for="inputId">Id:</label>
-            <input type="number" class="form-control" id="inputId">
+            <input type="number" class="form-control" id="inputId" [(ngModel)]="municipio.id" name="inputId">
         </div>
         <div class="form-group">
             <label for="inputNome">Nome:</label>
-            <input type="text" class="form-control" id="inputNome">
+            <input type="text" class="form-control" id="inputNome" [(ngModel)]="municipio.nome" name="inputNome">
         </div>
         <div class="form-group">
             <label for="inputCep">CEP:</label>
-            <input type="number" class="form-control" id="inputCep">
+            <input type="number" class="form-control" id="inputCep" [(ngModel)]="municipio.cep" name="inputCep">
         </div>
         <div class="form-group">
             <label for="inputDesc">Descrição:</label>
-            <textarea rows="4" cols="50" name="inputDesc" class="form-control"></textarea>
+            <textarea rows="4" cols="50" class="form-control" [(ngModel)]="municipio.descricao" name="inputDesc"></textarea>
         </div>
         <div class="form-group">
-            <label for="exampleFormControlInput1">População:</label>
-            <input type="number" class="form-control" id="exampleFormControlInput1">
+            <label for="inputPopulacao">População:</label>
+            <input type="number" class="form-control" id="inputPopulacao" [(ngModel)]="municipio.populacao" name="inputPopulacao">
         </div>
     </form>
 </div>
