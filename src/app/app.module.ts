@@ -6,6 +6,8 @@ import { NgModule } from "@angular/core";
 import { AppComponent } from "./component/app.component";
 import { routing } from "./app.routing";
 
+import { MunicipioListComponent } from "./component/municipio-list.component"
+
 @NgModule({
     imports: [
         BrowserModule,
@@ -15,6 +17,7 @@ import { routing } from "./app.routing";
     ],
     declarations: [
         AppComponent,
+        MunicipioListComponent
     ],
     providers: [
     ],
