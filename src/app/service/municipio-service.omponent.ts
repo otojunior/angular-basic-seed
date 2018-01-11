@@ -16,4 +16,13 @@ export class MunicipioService {
         console.log("Arquivo JSON chamado: " + `municipios.${id}.json`);
         return this.httpclient.get<Municipio>(`municipios.${id}.json`);
     }
+
+    public newMunicipio(): Observable<Municipio> {
+        return Observable.of(new Municipio(null, null, null, null, null));
+    }
+
+    public cloneMunicipio(): Observable<Municipio> {
+        // TODO: pegar o ultimo municipio
+        return Observable.of(new Municipio(null, null, null, null, null));
+    }
 }

@@ -10,6 +10,9 @@ import { routing } from "./app.routing";
 import { MunicipioListComponent } from "./component/municipio-list.component"
 import { MunicipioEditComponent } from "./component/municipio-edit.component"
 import { MunicipioService } from "./service/municipio-service.omponent"
+import { MunicipioEditResolver } from "./resolver/municipio-edit.resolver"
+import { MunicipioNewResolver } from "./resolver/municipio-new.resolver"
+import { MunicipioCloneResolver } from "./resolver/municipio-clone.resolver"
 
 @NgModule({
     imports: [
@@ -24,7 +27,10 @@ import { MunicipioService } from "./service/municipio-service.omponent"
         MunicipioEditComponent
     ],
     providers: [
-        MunicipioService
+        MunicipioService,
+        MunicipioEditResolver,
+        MunicipioNewResolver,
+        MunicipioCloneResolver
     ],
     bootstrap: [AppComponent]
 })

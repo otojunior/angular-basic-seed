@@ -20,7 +20,7 @@ export class MunicipioEditComponent implements OnInit {
     ngOnInit() {
         this.router.params.subscribe(
             params => {
-                let id = +params['id'];
+                let id = params['id'];
                 this.service.getMunicipio(id).subscribe(
                     municipio => {
                         this.municipio = municipio;
