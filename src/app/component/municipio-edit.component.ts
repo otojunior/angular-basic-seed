@@ -20,4 +20,8 @@ export class MunicipioEditComponent implements OnInit {
     ngOnInit() {
         this.municipio = this.router.snapshot.data["municipioResolver"];
     }
+
+    public saveMunicipio(): void {
+        this.service.saveMunicipio(this.municipio);
+    }
 }

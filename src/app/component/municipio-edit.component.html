@@ -28,6 +28,6 @@
 <div class="row" style="margin-top: 20px">
     <div class="btn-group" role="group" aria-label="Basic example">
         <button type="button" class="btn btn-secondary" [routerLink]="['/municipio']">Cancelar</button>
-        <button type="button" class="btn btn-secondary" onClick="window.location.replace('consulta.html')">Salvar</button>
+        <button type="button" class="btn btn-secondary" (click)="saveMunicipio()">Salvar</button>
     </div>
 </div>
